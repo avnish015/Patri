@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//Helper Methods
 let task1 = Task(title: "Task - 1", description: "Sample task", lastUpdated: Date(), font: Font.largeTitle)
 let task2 = Task(title: "Task - 2", description: "Sample task to just verify the code2", lastUpdated: Date(), font: Font.title)
 let task3 = Task(title: "Task - 3", description: "Sample task to just verify the code3", lastUpdated: Date(), font: Font.title2)
