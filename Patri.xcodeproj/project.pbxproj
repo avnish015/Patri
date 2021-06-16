@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD01A62B267A8712005A9F96 /* PatriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01A62A267A8712005A9F96 /* PatriTests.swift */; };
 		BD8339012662B72C00533DF7 /* NewTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8339002662B72C00533DF7 /* NewTaskViewModel.swift */; };
 		BD892CFD265E10F900B9C9BB /* PatriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD892CFC265E10F900B9C9BB /* PatriApp.swift */; };
 		BD892CFF265E10F900B9C9BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD892CFE265E10F900B9C9BB /* ContentView.swift */; };
@@ -20,7 +21,20 @@
 		BD892D20265E355D00B9C9BB /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD892D1F265E355D00B9C9BB /* NewTaskView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BD01A62D267A8712005A9F96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD892CF1265E10F900B9C9BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD892CF8265E10F900B9C9BB;
+			remoteInfo = Patri;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		BD01A628267A8712005A9F96 /* PatriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD01A62A267A8712005A9F96 /* PatriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatriTests.swift; sourceTree = "<group>"; };
+		BD01A62C267A8712005A9F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD8339002662B72C00533DF7 /* NewTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewModel.swift; sourceTree = "<group>"; };
 		BD892CF9265E10F900B9C9BB /* Patri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD892CFC265E10F900B9C9BB /* PatriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatriApp.swift; sourceTree = "<group>"; };
@@ -37,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BD01A625267A8712005A9F96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD892CF6265E10F900B9C9BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +68,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD01A629267A8712005A9F96 /* PatriTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD01A62A267A8712005A9F96 /* PatriTests.swift */,
+				BD01A62C267A8712005A9F96 /* Info.plist */,
+			);
+			path = PatriTests;
+			sourceTree = "<group>";
+		};
 		BD892CF0265E10F900B9C9BB = {
 			isa = PBXGroup;
 			children = (
 				BD892CFB265E10F900B9C9BB /* Patri */,
+				BD01A629267A8712005A9F96 /* PatriTests */,
 				BD892CFA265E10F900B9C9BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				BD892CF9265E10F900B9C9BB /* Patri.app */,
+				BD01A628267A8712005A9F96 /* PatriTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +149,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BD01A627267A8712005A9F96 /* PatriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD01A631267A8713005A9F96 /* Build configuration list for PBXNativeTarget "PatriTests" */;
+			buildPhases = (
+				BD01A624267A8712005A9F96 /* Sources */,
+				BD01A625267A8712005A9F96 /* Frameworks */,
+				BD01A626267A8712005A9F96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD01A62E267A8712005A9F96 /* PBXTargetDependency */,
+			);
+			name = PatriTests;
+			productName = PatriTests;
+			productReference = BD01A628267A8712005A9F96 /* PatriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BD892CF8265E10F900B9C9BB /* Patri */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD892D08265E10FD00B9C9BB /* Build configuration list for PBXNativeTarget "Patri" */;
@@ -143,6 +193,10 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					BD01A627267A8712005A9F96 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BD892CF8265E10F900B9C9BB;
+					};
 					BD892CF8265E10F900B9C9BB = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -162,11 +216,19 @@
 			projectRoot = "";
 			targets = (
 				BD892CF8265E10F900B9C9BB /* Patri */,
+				BD01A627267A8712005A9F96 /* PatriTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BD01A626267A8712005A9F96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD892CF7265E10F900B9C9BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +241,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BD01A624267A8712005A9F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD01A62B267A8712005A9F96 /* PatriTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD892CF5265E10F900B9C9BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,7 +267,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BD01A62E267A8712005A9F96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD892CF8265E10F900B9C9BB /* Patri */;
+			targetProxy = BD01A62D267A8712005A9F96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		BD01A62F267A8712005A9F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FCDXV2H3XH;
+				INFOPLIST_FILE = PatriTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = avnish.PatriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Patri.app/Patri";
+			};
+			name = Debug;
+		};
+		BD01A630267A8712005A9F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FCDXV2H3XH;
+				INFOPLIST_FILE = PatriTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = avnish.PatriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Patri.app/Patri";
+			};
+			name = Release;
+		};
 		BD892D06265E10FD00B9C9BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -361,6 +479,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BD01A631267A8713005A9F96 /* Build configuration list for PBXNativeTarget "PatriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD01A62F267A8712005A9F96 /* Debug */,
+				BD01A630267A8712005A9F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BD892CF4265E10F900B9C9BB /* Build configuration list for PBXProject "Patri" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
